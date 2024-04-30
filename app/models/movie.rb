@@ -12,4 +12,9 @@
 #
 class Movie < ApplicationRecord
   validates :title, presence: true
+
+  def to_partial_path
+    "movies/movie"
+  end
+
 end
